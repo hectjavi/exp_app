@@ -1,5 +1,5 @@
-// GENERATED CODE - DO NOT MODIFY BY HAND
 // coverage:ignore-file
+// GENERATED CODE - DO NOT MODIFY BY HAND
 // ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
@@ -9,281 +9,232 @@ part of 'onboarding_state_freezed.dart';
 // FreezedGenerator
 // **************************************************************************
 
-// dart format off
 T _$identity<T>(T value) => value;
+
+final _privateConstructorUsedError = UnsupportedError(
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
+
 /// @nodoc
 mixin _$OnboardingState {
+  int get currentPage => throw _privateConstructorUsedError;
+  List<String> get selectedInterests => throw _privateConstructorUsedError;
+  bool get isLoading => throw _privateConstructorUsedError;
+  bool get isCompleted => throw _privateConstructorUsedError;
+  String? get errorMessage => throw _privateConstructorUsedError;
 
- int get currentPage; List<String> get selectedInterests; bool get isLoading; bool get isCompleted; String? get errorMessage;
-/// Create a copy of OnboardingState
-/// with the given fields replaced by the non-null parameter values.
-@JsonKey(includeFromJson: false, includeToJson: false)
-@pragma('vm:prefer-inline')
-$OnboardingStateCopyWith<OnboardingState> get copyWith => _$OnboardingStateCopyWithImpl<OnboardingState>(this as OnboardingState, _$identity);
-
-
-
-@override
-bool operator ==(Object other) {
-  return identical(this, other) || (other.runtimeType == runtimeType&&other is OnboardingState&&(identical(other.currentPage, currentPage) || other.currentPage == currentPage)&&const DeepCollectionEquality().equals(other.selectedInterests, selectedInterests)&&(identical(other.isLoading, isLoading) || other.isLoading == isLoading)&&(identical(other.isCompleted, isCompleted) || other.isCompleted == isCompleted)&&(identical(other.errorMessage, errorMessage) || other.errorMessage == errorMessage));
-}
-
-
-@override
-int get hashCode => Object.hash(runtimeType,currentPage,const DeepCollectionEquality().hash(selectedInterests),isLoading,isCompleted,errorMessage);
-
-@override
-String toString() {
-  return 'OnboardingState(currentPage: $currentPage, selectedInterests: $selectedInterests, isLoading: $isLoading, isCompleted: $isCompleted, errorMessage: $errorMessage)';
-}
-
-
+  @JsonKey(ignore: true)
+  $OnboardingStateCopyWith<OnboardingState> get copyWith =>
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract mixin class $OnboardingStateCopyWith<$Res>  {
-  factory $OnboardingStateCopyWith(OnboardingState value, $Res Function(OnboardingState) _then) = _$OnboardingStateCopyWithImpl;
-@useResult
-$Res call({
- int currentPage, List<String> selectedInterests, bool isLoading, bool isCompleted, String? errorMessage
-});
-
-
-
-
+abstract class $OnboardingStateCopyWith<$Res> {
+  factory $OnboardingStateCopyWith(
+          OnboardingState value, $Res Function(OnboardingState) then) =
+      _$OnboardingStateCopyWithImpl<$Res, OnboardingState>;
+  @useResult
+  $Res call(
+      {int currentPage,
+      List<String> selectedInterests,
+      bool isLoading,
+      bool isCompleted,
+      String? errorMessage});
 }
+
 /// @nodoc
-class _$OnboardingStateCopyWithImpl<$Res>
+class _$OnboardingStateCopyWithImpl<$Res, $Val extends OnboardingState>
     implements $OnboardingStateCopyWith<$Res> {
-  _$OnboardingStateCopyWithImpl(this._self, this._then);
+  _$OnboardingStateCopyWithImpl(this._value, this._then);
 
-  final OnboardingState _self;
-  final $Res Function(OnboardingState) _then;
+  // ignore: unused_field
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
-/// Create a copy of OnboardingState
-/// with the given fields replaced by the non-null parameter values.
-@pragma('vm:prefer-inline') @override $Res call({Object? currentPage = null,Object? selectedInterests = null,Object? isLoading = null,Object? isCompleted = null,Object? errorMessage = freezed,}) {
-  return _then(_self.copyWith(
-currentPage: null == currentPage ? _self.currentPage : currentPage // ignore: cast_nullable_to_non_nullable
-as int,selectedInterests: null == selectedInterests ? _self.selectedInterests : selectedInterests // ignore: cast_nullable_to_non_nullable
-as List<String>,isLoading: null == isLoading ? _self.isLoading : isLoading // ignore: cast_nullable_to_non_nullable
-as bool,isCompleted: null == isCompleted ? _self.isCompleted : isCompleted // ignore: cast_nullable_to_non_nullable
-as bool,errorMessage: freezed == errorMessage ? _self.errorMessage : errorMessage // ignore: cast_nullable_to_non_nullable
-as String?,
-  ));
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? currentPage = null,
+    Object? selectedInterests = null,
+    Object? isLoading = null,
+    Object? isCompleted = null,
+    Object? errorMessage = freezed,
+  }) {
+    return _then(_value.copyWith(
+      currentPage: null == currentPage
+          ? _value.currentPage
+          : currentPage // ignore: cast_nullable_to_non_nullable
+              as int,
+      selectedInterests: null == selectedInterests
+          ? _value.selectedInterests
+          : selectedInterests // ignore: cast_nullable_to_non_nullable
+              as List<String>,
+      isLoading: null == isLoading
+          ? _value.isLoading
+          : isLoading // ignore: cast_nullable_to_non_nullable
+              as bool,
+      isCompleted: null == isCompleted
+          ? _value.isCompleted
+          : isCompleted // ignore: cast_nullable_to_non_nullable
+              as bool,
+      errorMessage: freezed == errorMessage
+          ? _value.errorMessage
+          : errorMessage // ignore: cast_nullable_to_non_nullable
+              as String?,
+    ) as $Val);
+  }
 }
 
+/// @nodoc
+abstract class _$$OnboardingStateImplCopyWith<$Res>
+    implements $OnboardingStateCopyWith<$Res> {
+  factory _$$OnboardingStateImplCopyWith(_$OnboardingStateImpl value,
+          $Res Function(_$OnboardingStateImpl) then) =
+      __$$OnboardingStateImplCopyWithImpl<$Res>;
+  @override
+  @useResult
+  $Res call(
+      {int currentPage,
+      List<String> selectedInterests,
+      bool isLoading,
+      bool isCompleted,
+      String? errorMessage});
 }
 
+/// @nodoc
+class __$$OnboardingStateImplCopyWithImpl<$Res>
+    extends _$OnboardingStateCopyWithImpl<$Res, _$OnboardingStateImpl>
+    implements _$$OnboardingStateImplCopyWith<$Res> {
+  __$$OnboardingStateImplCopyWithImpl(
+      _$OnboardingStateImpl _value, $Res Function(_$OnboardingStateImpl) _then)
+      : super(_value, _then);
 
-/// Adds pattern-matching-related methods to [OnboardingState].
-extension OnboardingStatePatterns on OnboardingState {
-/// A variant of `map` that fallback to returning `orElse`.
-///
-/// It is equivalent to doing:
-/// ```dart
-/// switch (sealedClass) {
-///   case final Subclass value:
-///     return ...;
-///   case _:
-///     return orElse();
-/// }
-/// ```
-
-@optionalTypeArgs TResult maybeMap<TResult extends Object?>(TResult Function( _OnboardingState value)?  $default,{required TResult orElse(),}){
-final _that = this;
-switch (_that) {
-case _OnboardingState() when $default != null:
-return $default(_that);case _:
-  return orElse();
-
-}
-}
-/// A `switch`-like method, using callbacks.
-///
-/// Callbacks receives the raw object, upcasted.
-/// It is equivalent to doing:
-/// ```dart
-/// switch (sealedClass) {
-///   case final Subclass value:
-///     return ...;
-///   case final Subclass2 value:
-///     return ...;
-/// }
-/// ```
-
-@optionalTypeArgs TResult map<TResult extends Object?>(TResult Function( _OnboardingState value)  $default,){
-final _that = this;
-switch (_that) {
-case _OnboardingState():
-return $default(_that);case _:
-  throw StateError('Unexpected subclass');
-
-}
-}
-/// A variant of `map` that fallback to returning `null`.
-///
-/// It is equivalent to doing:
-/// ```dart
-/// switch (sealedClass) {
-///   case final Subclass value:
-///     return ...;
-///   case _:
-///     return null;
-/// }
-/// ```
-
-@optionalTypeArgs TResult? mapOrNull<TResult extends Object?>(TResult? Function( _OnboardingState value)?  $default,){
-final _that = this;
-switch (_that) {
-case _OnboardingState() when $default != null:
-return $default(_that);case _:
-  return null;
-
-}
-}
-/// A variant of `when` that fallback to an `orElse` callback.
-///
-/// It is equivalent to doing:
-/// ```dart
-/// switch (sealedClass) {
-///   case Subclass(:final field):
-///     return ...;
-///   case _:
-///     return orElse();
-/// }
-/// ```
-
-@optionalTypeArgs TResult maybeWhen<TResult extends Object?>(TResult Function( int currentPage,  List<String> selectedInterests,  bool isLoading,  bool isCompleted,  String? errorMessage)?  $default,{required TResult orElse(),}) {final _that = this;
-switch (_that) {
-case _OnboardingState() when $default != null:
-return $default(_that.currentPage,_that.selectedInterests,_that.isLoading,_that.isCompleted,_that.errorMessage);case _:
-  return orElse();
-
-}
-}
-/// A `switch`-like method, using callbacks.
-///
-/// As opposed to `map`, this offers destructuring.
-/// It is equivalent to doing:
-/// ```dart
-/// switch (sealedClass) {
-///   case Subclass(:final field):
-///     return ...;
-///   case Subclass2(:final field2):
-///     return ...;
-/// }
-/// ```
-
-@optionalTypeArgs TResult when<TResult extends Object?>(TResult Function( int currentPage,  List<String> selectedInterests,  bool isLoading,  bool isCompleted,  String? errorMessage)  $default,) {final _that = this;
-switch (_that) {
-case _OnboardingState():
-return $default(_that.currentPage,_that.selectedInterests,_that.isLoading,_that.isCompleted,_that.errorMessage);case _:
-  throw StateError('Unexpected subclass');
-
-}
-}
-/// A variant of `when` that fallback to returning `null`
-///
-/// It is equivalent to doing:
-/// ```dart
-/// switch (sealedClass) {
-///   case Subclass(:final field):
-///     return ...;
-///   case _:
-///     return null;
-/// }
-/// ```
-
-@optionalTypeArgs TResult? whenOrNull<TResult extends Object?>(TResult? Function( int currentPage,  List<String> selectedInterests,  bool isLoading,  bool isCompleted,  String? errorMessage)?  $default,) {final _that = this;
-switch (_that) {
-case _OnboardingState() when $default != null:
-return $default(_that.currentPage,_that.selectedInterests,_that.isLoading,_that.isCompleted,_that.errorMessage);case _:
-  return null;
-
-}
-}
-
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? currentPage = null,
+    Object? selectedInterests = null,
+    Object? isLoading = null,
+    Object? isCompleted = null,
+    Object? errorMessage = freezed,
+  }) {
+    return _then(_$OnboardingStateImpl(
+      currentPage: null == currentPage
+          ? _value.currentPage
+          : currentPage // ignore: cast_nullable_to_non_nullable
+              as int,
+      selectedInterests: null == selectedInterests
+          ? _value._selectedInterests
+          : selectedInterests // ignore: cast_nullable_to_non_nullable
+              as List<String>,
+      isLoading: null == isLoading
+          ? _value.isLoading
+          : isLoading // ignore: cast_nullable_to_non_nullable
+              as bool,
+      isCompleted: null == isCompleted
+          ? _value.isCompleted
+          : isCompleted // ignore: cast_nullable_to_non_nullable
+              as bool,
+      errorMessage: freezed == errorMessage
+          ? _value.errorMessage
+          : errorMessage // ignore: cast_nullable_to_non_nullable
+              as String?,
+    ));
+  }
 }
 
 /// @nodoc
 
+class _$OnboardingStateImpl implements _OnboardingState {
+  const _$OnboardingStateImpl(
+      {this.currentPage = 0,
+      final List<String> selectedInterests = const [],
+      this.isLoading = false,
+      this.isCompleted = false,
+      this.errorMessage})
+      : _selectedInterests = selectedInterests;
 
-class _OnboardingState implements OnboardingState {
-  const _OnboardingState({this.currentPage = 0, final  List<String> selectedInterests = const [], this.isLoading = false, this.isCompleted = false, this.errorMessage}): _selectedInterests = selectedInterests;
-  
+  @override
+  @JsonKey()
+  final int currentPage;
+  final List<String> _selectedInterests;
+  @override
+  @JsonKey()
+  List<String> get selectedInterests {
+    if (_selectedInterests is EqualUnmodifiableListView)
+      return _selectedInterests;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_selectedInterests);
+  }
 
-@override@JsonKey() final  int currentPage;
- final  List<String> _selectedInterests;
-@override@JsonKey() List<String> get selectedInterests {
-  if (_selectedInterests is EqualUnmodifiableListView) return _selectedInterests;
-  // ignore: implicit_dynamic_type
-  return EqualUnmodifiableListView(_selectedInterests);
+  @override
+  @JsonKey()
+  final bool isLoading;
+  @override
+  @JsonKey()
+  final bool isCompleted;
+  @override
+  final String? errorMessage;
+
+  @override
+  String toString() {
+    return 'OnboardingState(currentPage: $currentPage, selectedInterests: $selectedInterests, isLoading: $isLoading, isCompleted: $isCompleted, errorMessage: $errorMessage)';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$OnboardingStateImpl &&
+            (identical(other.currentPage, currentPage) ||
+                other.currentPage == currentPage) &&
+            const DeepCollectionEquality()
+                .equals(other._selectedInterests, _selectedInterests) &&
+            (identical(other.isLoading, isLoading) ||
+                other.isLoading == isLoading) &&
+            (identical(other.isCompleted, isCompleted) ||
+                other.isCompleted == isCompleted) &&
+            (identical(other.errorMessage, errorMessage) ||
+                other.errorMessage == errorMessage));
+  }
+
+  @override
+  int get hashCode => Object.hash(
+      runtimeType,
+      currentPage,
+      const DeepCollectionEquality().hash(_selectedInterests),
+      isLoading,
+      isCompleted,
+      errorMessage);
+
+  @JsonKey(ignore: true)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$OnboardingStateImplCopyWith<_$OnboardingStateImpl> get copyWith =>
+      __$$OnboardingStateImplCopyWithImpl<_$OnboardingStateImpl>(
+          this, _$identity);
 }
 
-@override@JsonKey() final  bool isLoading;
-@override@JsonKey() final  bool isCompleted;
-@override final  String? errorMessage;
+abstract class _OnboardingState implements OnboardingState {
+  const factory _OnboardingState(
+      {final int currentPage,
+      final List<String> selectedInterests,
+      final bool isLoading,
+      final bool isCompleted,
+      final String? errorMessage}) = _$OnboardingStateImpl;
 
-/// Create a copy of OnboardingState
-/// with the given fields replaced by the non-null parameter values.
-@override @JsonKey(includeFromJson: false, includeToJson: false)
-@pragma('vm:prefer-inline')
-_$OnboardingStateCopyWith<_OnboardingState> get copyWith => __$OnboardingStateCopyWithImpl<_OnboardingState>(this, _$identity);
-
-
-
-@override
-bool operator ==(Object other) {
-  return identical(this, other) || (other.runtimeType == runtimeType&&other is _OnboardingState&&(identical(other.currentPage, currentPage) || other.currentPage == currentPage)&&const DeepCollectionEquality().equals(other._selectedInterests, _selectedInterests)&&(identical(other.isLoading, isLoading) || other.isLoading == isLoading)&&(identical(other.isCompleted, isCompleted) || other.isCompleted == isCompleted)&&(identical(other.errorMessage, errorMessage) || other.errorMessage == errorMessage));
+  @override
+  int get currentPage;
+  @override
+  List<String> get selectedInterests;
+  @override
+  bool get isLoading;
+  @override
+  bool get isCompleted;
+  @override
+  String? get errorMessage;
+  @override
+  @JsonKey(ignore: true)
+  _$$OnboardingStateImplCopyWith<_$OnboardingStateImpl> get copyWith =>
+      throw _privateConstructorUsedError;
 }
-
-
-@override
-int get hashCode => Object.hash(runtimeType,currentPage,const DeepCollectionEquality().hash(_selectedInterests),isLoading,isCompleted,errorMessage);
-
-@override
-String toString() {
-  return 'OnboardingState(currentPage: $currentPage, selectedInterests: $selectedInterests, isLoading: $isLoading, isCompleted: $isCompleted, errorMessage: $errorMessage)';
-}
-
-
-}
-
-/// @nodoc
-abstract mixin class _$OnboardingStateCopyWith<$Res> implements $OnboardingStateCopyWith<$Res> {
-  factory _$OnboardingStateCopyWith(_OnboardingState value, $Res Function(_OnboardingState) _then) = __$OnboardingStateCopyWithImpl;
-@override @useResult
-$Res call({
- int currentPage, List<String> selectedInterests, bool isLoading, bool isCompleted, String? errorMessage
-});
-
-
-
-
-}
-/// @nodoc
-class __$OnboardingStateCopyWithImpl<$Res>
-    implements _$OnboardingStateCopyWith<$Res> {
-  __$OnboardingStateCopyWithImpl(this._self, this._then);
-
-  final _OnboardingState _self;
-  final $Res Function(_OnboardingState) _then;
-
-/// Create a copy of OnboardingState
-/// with the given fields replaced by the non-null parameter values.
-@override @pragma('vm:prefer-inline') $Res call({Object? currentPage = null,Object? selectedInterests = null,Object? isLoading = null,Object? isCompleted = null,Object? errorMessage = freezed,}) {
-  return _then(_OnboardingState(
-currentPage: null == currentPage ? _self.currentPage : currentPage // ignore: cast_nullable_to_non_nullable
-as int,selectedInterests: null == selectedInterests ? _self._selectedInterests : selectedInterests // ignore: cast_nullable_to_non_nullable
-as List<String>,isLoading: null == isLoading ? _self.isLoading : isLoading // ignore: cast_nullable_to_non_nullable
-as bool,isCompleted: null == isCompleted ? _self.isCompleted : isCompleted // ignore: cast_nullable_to_non_nullable
-as bool,errorMessage: freezed == errorMessage ? _self.errorMessage : errorMessage // ignore: cast_nullable_to_non_nullable
-as String?,
-  ));
-}
-
-
-}
-
-// dart format on

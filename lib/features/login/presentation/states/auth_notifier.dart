@@ -4,6 +4,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 
 import '../states/auth_state.dart';
 import '../../../../shared/models/user_model.dart';
+import 'package:flutter_application_1/services/firebase_notification_service.dart';
 
 class AuthNotifier extends StateNotifier<AuthState> {
   final FirebaseAuth _auth = FirebaseAuth.instance;
@@ -22,6 +23,9 @@ class AuthNotifier extends StateNotifier<AuthState> {
         email: email,
         password: password,
       );
+
+// Inicializar FCM después del login
+await FirebaseNotificationService().initialize();
 
       // ✅ DEBUG FIREBASE RESPONSE
       print('LOGIN RESPONSE USER: ${credential.user}');

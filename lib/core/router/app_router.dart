@@ -16,6 +16,8 @@ import '../../features/login/presentation/providers/auth_provider.dart';
 
 import '../../features/product/presentation/views/create_product_view.dart';
 import '../../features/product/presentation/views/edit_product_view.dart';
+import '../../features/orders/presentation/view/order_detail_view.dart';
+import '../navigation/navigation_service.dart';
 
 
 // ✅ ROUTER COMO PROVIDER
@@ -23,6 +25,7 @@ final routerProvider = Provider<GoRouter>((ref) {
   final authState = ref.watch(authNotifierProvider);
 
   return GoRouter(
+    navigatorKey: navigatorKey,
     debugLogDiagnostics: true,
 
     // ✅ REDIRECT GLOBAL (LOGIN CONTROL)
@@ -109,6 +112,20 @@ GoRoute(
   path: '/orders',
   builder: (context, state) =>
       const OrderHistoryView(),
+),
+
+GoRoute(
+  path: '/order-detail/:orderId',
+  name: 'orderDetail',
+  builder: (context, state) {
+
+    final orderId =
+        state.pathParameters['orderId']!;
+
+    return OrderDetailView(
+      orderId: orderId,
+    );
+  },
 ),
 
     ],

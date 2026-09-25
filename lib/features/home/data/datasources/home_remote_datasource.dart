@@ -31,9 +31,7 @@ class HomeRemoteDataSource {
   Future<List<String>> getBanners() async {
     await Future.delayed(const Duration(milliseconds: 300));
     return [
-      'https://images.unsplash.com/photo-1441986300917-64674bd600d8',
-      'https://images.unsplash.com/photo-1483985988355-763728e1935b',
-      'https://images.unsplash.com/photo-1445205170230-053b83016050',
+      'https://firebasestorage.googleapis.com/v0/b/ecomerce-flutter-ae26f.firebasestorage.app/o/products%2F1784817802582.jpg?alt=media&token=96ff6898-9986-43ed-82c4-3fee41665aa8'
     ];
   }
 
